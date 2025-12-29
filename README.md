@@ -16,6 +16,17 @@ In the preliminary work [Chen D, Ding Y, Gao P, et al. Multi dimensional Texture
 The SENS3 dataset [Balasubramanian J K, Kodak B L, Vardar Y. Sens3: Multisensory database of finger surface interactions and corresponding sensing [C]//International Conference on Human Haptic Sensing and Touch enabled Computer Applications. Cham: Springer Nature Switzerland, 2024: 262-277.] is a multimodal texture tactile perception resource library designed specifically for object surface interaction scenarios. Its core design revolves around the physical logic of real tactile interaction. 
 This study focuses on the multidimensional tactile modeling task of textures in dynamic interactive environments, focusing on two core dimensions: the continuous learning ability of new category textures and the anti forgetting ability of old category textures. We select fabric, wood, metal, plastic, and rubber in the SENS3 database as the basic texture category training model, and then take sandpaper, paper, leather, foam, and synthetic materials as the incremental texture categories to build the domain incremental learning scene in turn. For more details, see https://link.springer.com/chapter/10.1007/978-3-031-70058-3_21
 
+### Data Preparation
+Start by running `utils/data_deal.py` to retrieve and organize the required original dataset.
+```bash
+utils/data_deal.py
+```
+
+Then run 'utilities/dataprocess. py', align the Excel data by file name, and merge it into a CSV file. Crop the data before and after and save it as standardized results to obtain the initial training data and incremental learning data, which are two folders.
+```bash
+utils/dataprocess.py
+```
+
 
 
 
