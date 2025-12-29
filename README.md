@@ -1,1 +1,1 @@
-# Multi-dimensional-texture-tactile-reproduction-based-on-generative-replay-incremental-learning-model
+# Multi-dimensional Texture Haptic Reproduction Method Based On Generative Replay Incremental Learning Model
